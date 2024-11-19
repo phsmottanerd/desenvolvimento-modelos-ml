@@ -22,3 +22,22 @@ Classificação: Modelos de classificação utilizando algoritmos como SVM, Deci
 Regressão: Implementação de modelos de regressão linear e regressão polinomial.
 Deep Learning: Implementação de redes neurais utilizando TensorFlow/Keras para resolver problemas de classificação e regressão.
 Análise de Dados: Limpeza, pré-processamento e visualização de dados antes da modelagem.
+
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.datasets import make_regression
+plt.savefig('/content/grafico_regressao.png')
+
+plt.show()
+
+
+
+# Gerar dados para o gráfico de regressão
+x, y = make_regression(n_samples=200, n_features=1, noise=30)
+
+# Criar o gráfico de dispersão
+plt.scatter(x, y)
+plt.title('Gráfico de Regressão')
+plt.xlabel('X')
+plt.ylabel('Y')
+
